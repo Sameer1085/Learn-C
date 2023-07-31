@@ -1,0 +1,121 @@
+1.
+#include<stdio.h>
+main()
+{
+int r,s,i,j;
+printf("enter r\n");
+scanf("%d",&r);
+s=1;
+for(i=1;i<=r;i++)
+{
+    for(j=1;j<=i;j++)
+printf("%d\t",s);
+printf("\n");
+}
+}
+
+enter r
+4
+1	
+1	1	
+1	1	1	
+1	1	1	1	
+
+2.
+#include<stdio.h>
+main()
+{
+int r,i,j;
+printf("enter r\n");
+scanf("%d",&r);
+for(i=1;i<=r;i++)
+{
+    for(j=1;j<=i;j++)
+printf("%d\t",i);
+printf("\n");
+}
+}
+
+enter r
+4
+1	
+2	2	
+3	3	3	
+4	4	4	4	
+
+3.
+#include<stdio.h>
+main()
+{
+int r,i,j;
+printf("enter r\n");
+scanf("%d",&r);
+for(i=1;i<=r;i++)
+{
+    for(j=1;j<=i;j++)
+printf("%d\t",j);
+printf("\n");
+}
+}
+
+enter r
+4
+1	
+1	2	
+1	2	3	
+1	2	3	4	
+
+4.
+#include<stdio.h>
+main()
+{
+int r,i,j,a,b,c;
+printf("enter r\n");
+scanf("%d",&r);
+a=0;b=1;
+for(i=1;i<=r;i++)
+{
+    for(j=1;j<=i;j++)
+    if(j%2==0)
+printf("%d\t",b);
+else
+printf("%d\t",a);
+printf("\n");
+c=a;
+a=b;
+b=c;
+}
+}
+
+enter r
+4
+0	
+1	0	
+0	1	0	
+1	0	1	0	
+
+5.
+#include <stdio.h>
+
+int main()
+{
+  int r,j,i,k;
+  printf("enter r\n");
+  scanf("%d",&r);
+  for(i=1;i<=r;i++)
+  {
+      k=i;
+      for(j=1;j<=i;j++)
+      printf("%d\t",k++);
+      printf("\n");
+  }
+}
+
+output:
+enter r
+4
+1       
+2       3       
+3       4       5       
+4       5       6       7       
+
