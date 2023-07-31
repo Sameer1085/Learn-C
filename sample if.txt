@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+int n;
+printf("enter n\n");
+scanf("%d",&n);
+if(n<10)
+{
+    n=n+35;
+}
+else
+n=n+25;
+printf("%d\n",n);
+}
+output
+enter n
+9
+44
+
+print name 
+
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+int n;
+printf("enter n\n");
+scanf("%d",&n);
+if(n<10)
+{
+    printf("saran\nsai\nbala\n");
+}
+printf("itech\n");
+}
+
+output
+enter n
+3
+saran
+sai
+bala
+itech
+
+

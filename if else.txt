@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+int n;
+printf("enter n\n");
+scanf("%d",&n);
+if(n<10)
+{
+    n+=35;
+}
+else
+{
+n+=25;
+}
+printf("%d\n",n);
+}
+
+output
+enter n
+4
+39

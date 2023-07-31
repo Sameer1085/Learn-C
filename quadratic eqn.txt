@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include<math.h>
+#include<stdlib.h>
+int main()
+{
+int a,b,c,d;
+float x1,x2,rp,ip;
+printf("enter a,b,c\n");
+scanf("%d%d%d",&a,&b,&c);
+d=b*b-4*a*c;
+if(d=0){
+    printf("Real and equal\n");
+    x1=(float)-b/(2*a);
+    x2=x1;
+    printf("%f\n%f\n",x1,x2);
+}
+    else if(d>0)
+    {
+         printf("Real and unequal\n");
+    x1=(float)(-b+sqrt(a))/(2*a);
+    x2=(float)(-b-sqrt(a))/(2*a);
+    printf("%f\n%f\n",x1,x2);
+    }
+    else
+    {
+      printf("complex\n");
+    rp=(float)-b/(2*a);
+    ip=(float)sqrt(abs(d))/(2*a);
+    printf("%f+%fi\n",rp,ip);
+    printf("%f-%fi\n",rp,ip);
+}
+}
+
+output:
+enter a,b,c
+1
+1
+1
+complex
+-0.500000+0.000000i
+-0.500000-0.000000i
+
+
